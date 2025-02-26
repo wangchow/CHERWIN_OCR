@@ -38,7 +38,7 @@ docker build -t cherwin_ocr .
 docker run -p 3721:3721 -v /volume1/docker/ocr:/app --name cherwin_ocr cherwin_ocr
 
 ```
-
+#你在仓库主目录下执行docker run -p 3721:3721 -v $(pwd):/app --name cherwin_ocr cherwin_ocr 就能正常运行了
 # 接口
 
 **具体请看demo_api_b64.py或demo_api_bytes.py文件**
